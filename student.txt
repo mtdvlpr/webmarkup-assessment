@@ -1,0 +1,4 @@
+Student name: Manoah Tervoort;
+Student number: 643622;
+Student class: HAIT1b;
+URL student GitHub repository: https://github.com/mtdvlpr/webmarkup-assessment
