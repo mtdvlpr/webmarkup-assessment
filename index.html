@@ -5,7 +5,10 @@
 
   <!-- Meta data -->
   <meta charset="UTF-8">
+  <meta name="author" content="Manoah Tervoort"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This a is website for people to learn about Taekwondo and the city of Haarlem"/>
+  <meta name="keywords" content="Taekwondo, Sport, Haarlem, Netherlands, Fighting, Sports, The Netherlands, Learning Taekwondo, Fighting Sport"/>
 
   <!-- CSS -->
   <link rel="stylesheet" href="/643622/css/style.css">
@@ -68,10 +71,12 @@
         <header><h2>Haarlem</h2></header>
         <article>
           <h3>The city</h3>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>          <p>And thanks to its compact size, it’s easy to get a good introduction to the city even if you only have one day to explore it.</p>
-          <div class="fakeimg" style="height:200px;">Image</div>
+          <img src="/643622/img/Haarlem-1280x720.jpg" alt="Haarlem" title="Haarlem">
+          <p>With an abundance of historical sights, cultural attractions and hidden gems crammed into a relatively small city, a visit to Haarlem makes for a brilliant day trip.</p>
+          <p>There’s plenty to keep the visitor entertained - including river cruises, flower markets and more.</p>
+          <p>And thanks to its compact size, it’s easy to get a good introduction to the city even if you only have one day to explore it.</p>
+          <p>The oldest museum in the Netherlands, Teylers Museum was founded in 1778 after its namesake, a wealthy cloth and silk dealer, bequeathed his fortune to build an establishment to illustrate the development of art and science.</p>
+          <img src="/643622/img/teylers-museum.jpg" alt="Teyler's museum" title="Teyler's museum">
         </article>
       </section>
 
@@ -101,6 +106,28 @@
       <!-- Contact content -->
       <section id="contactcontent">
         <header><h2>Contact</h2></header>
+        <form action="http://witan.nl/inholland/testform.php" method="post">
+          <fieldset>
+            <legend>Contact form</legend>
+            <ul class="wrapper">
+              <li class="form-row">
+                <label for="name">Name: *</label>
+                <input type="text" id="name" name="name" required>
+              </li>
+              <li class="form-row">
+                <label for="email">Email address: *</label>
+                <input type="email" id="email" name="email" required>
+              </li>
+              <li class="form-row">
+                <label for="message">Message: *</label>
+                <textarea id="message" name="message" required></textarea>
+              </li>
+              <li class="form-row">
+                <input type="submit">
+              </li>
+            </ul>
+          </fieldset>
+        </form>
       </section>
     </main>
   </div>
