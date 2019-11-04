@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: arial;
+  background-color: blue;
+}
+
+/* Header */
+#header {
+  color: white;
+  text-align: center;
+  background: transparent;
+  padding: 5em;
+}
+
+#header h1 {
+  font-size: 3em;
+  margin-bottom: 1%;
+}
+
+#header h2 {
+  margin-top: 0;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: red;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav a {
+  color: white;
+  display: inline-block;
+  padding: .9em 1.2em;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1em;
+}
+
+nav a:hover {
+  background-color: black;
+}
+
+/* Container */
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Left column */
+aside {
+  flex-basis: 30%;
+  padding-top: 2em;
+}
+
+/* Right column */
+main {
+  flex-basis: 60%;
+  padding-top: 2em;
+}
+
+#container section {
+  flex: 1;
+  background-color: white;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+section > header > h2 {
+  text-align: center;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #707070;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  color: white;
+  padding: 1em;
+  text-align: center;
+  background: black;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: grey;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 1040px) {
+  #container {
+    flex-direction: column;
+  }
+  main, aside {
+    padding: 1em 2% 0 2%;
+  }
+  main {
+    padding-top: 0;
+  }
+  #container section {
+    margin-bottom: 1em;
+  }
+}
