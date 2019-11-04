@@ -10,39 +10,133 @@
   <meta name="description" content="This a is website for people to learn about Taekwondo and the city of Haarlem"/>
   <meta name="keywords" content="Taekwondo, Sport, Haarlem, Netherlands, Fighting, Sports, The Netherlands, Learning Taekwondo, Fighting Sport"/>
 
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/643622/img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/643622/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/643622/img/icons/favicon-16x16.png">
+  <link rel="manifest" href="/643622/img/icons/site.webmanifest">
+
+  <!-- Sitemap (the sitemap will be refreshed monthly) -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/643622/sitemap.xml"/>
+
   <!-- CSS -->
   <link rel="stylesheet" href="/643622/css/style.css">
 </head>
 <body>
 
-  <!-- Background video -->
-  <video autoplay muted loop id="bgVideo">
-    <source src="/643622/videos/background.webm" type="video/webm">
-    <source src="/643622/videos/background.mp4" type="video/mp4">
-    <source src="/643622/videos/background.ogv" type="video/ogg">
-  </video>
-
   <!-- Header -->
   <header id="header">
-    <h1>World Taekwondo Federation</h1>
+    <h1><img src="/643622/img/logo.png" alt="Logo" title="Logo" id="logo"> World Taekwondo Federation</h1>
     <h2>Taekwondo for you</h2>
   </header>
 
   <!-- Navigation Bar -->
   <nav>
+    <input type="checkbox" id="menu-checkbox"/>
     <ul>
-      <li><a href="#header">Home</a></li>
-      <li><a href="#maincontent">Haarlem</a></li>
-      <li><a href="#secondarycontent">Haarlem Central</a></li>
-      <li><a href="#sportcontent">Taekwondo</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#referalcontent">Referral</a></li>
-      <li><a href="#contactcontent">Contact</a></li>
+      <li><label for="menu-checkbox" id="menu-icon"><img src="/643622/img/menu.svg" alt="Open menu" title="Open menu"></label></li>
+      <li class="menu-item"><a href="#header">Home</a></li>
+      <li class="menu-item"><a href="#maincontent">Haarlem</a></li>
+      <li class="menu-item"><a href="#secondarycontent">Haarlem Central</a></li>
+      <li class="menu-item"><a href="#sportcontent">Taekwondo</a></li>
+      <li class="menu-item"><a href="#about">About Us</a></li>
+      <li class="menu-item"><a href="#referalcontent">Referral</a></li>
+      <li class="menu-item"><a href="#contactcontent">Contact</a></li>
     </ul>
   </nav>
 
   <!-- The container -->
   <div id="container">
+
+    <!-- Main column -->
+    <main>
+
+      <!-- Main content -->
+      <section id="maincontent">
+        <header><h2>Haarlem</h2></header>
+        <article>
+          <h3>The city</h3>
+          <img src="/643622/img/Haarlem-1280x720.jpg" alt="Haarlem" title="Haarlem">
+          <p>With an abundance of historical sights, cultural attractions and hidden gems crammed into a relatively small city, a visit to Haarlem makes for a brilliant day trip.</p>
+          <p>There’s plenty to keep the visitor entertained - including river cruises, flower markets and more.</p>
+          <p>And thanks to its compact size, it’s easy to get a good introduction to the city even if you only have one day to explore it.</p>
+          <p>The oldest museum in the Netherlands, Teylers Museum was founded in 1778 after its namesake, a wealthy cloth and silk dealer, bequeathed his fortune to build an establishment to illustrate the development of art and science.</p>
+          <img src="/643622/img/teylers-museum.jpg" alt="Teyler's museum" title="Teyler's museum">
+          <footer>Haarlem</footer>
+        </article>
+      </section>
+
+      <!-- Secondary content -->
+      <section id="secondarycontent">
+        <header><h2>Haarlem Central</h2></header>
+        <article>
+          <h5>Title description, Sep 2, 2017</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <footer>Haarlem Central</footer>
+        </article>
+      </section>
+
+      <!-- Sport content -->
+      <section id="sportcontent">
+        <header><h2>Taekwondo</h2></header>
+        <article>
+          <h5>Sportclub 1</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+          <h5>Sportclub 2</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+          <h5>Sportclub 3</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+          <h5>Sportclub 4</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+          <h5>Sportclub 5</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+          <h5>Sportclub 6</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+          <h5>Sportclub 7</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+          <h5>Sportclub 8</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+          <h5>Sportclub 9</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+          <h5>Sportclub 10</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+          <footer>Taekwondo</footer>
+        </article>
+      </section>
+    </main>
 
     <!-- Aside -->
     <aside>
@@ -59,48 +153,11 @@
       <!-- Referral -->
       <section id="referalcontent">
         <header><h2>Referral</h2></header>
-        <p>Some text..</p>
-      </section>
-    </aside>
-
-    <!-- Main column -->
-    <main>
-
-      <!-- Main content -->
-      <section id="maincontent">
-        <header><h2>Haarlem</h2></header>
-        <article>
-          <h3>The city</h3>
-          <img src="/643622/img/Haarlem-1280x720.jpg" alt="Haarlem" title="Haarlem">
-          <p>With an abundance of historical sights, cultural attractions and hidden gems crammed into a relatively small city, a visit to Haarlem makes for a brilliant day trip.</p>
-          <p>There’s plenty to keep the visitor entertained - including river cruises, flower markets and more.</p>
-          <p>And thanks to its compact size, it’s easy to get a good introduction to the city even if you only have one day to explore it.</p>
-          <p>The oldest museum in the Netherlands, Teylers Museum was founded in 1778 after its namesake, a wealthy cloth and silk dealer, bequeathed his fortune to build an establishment to illustrate the development of art and science.</p>
-          <img src="/643622/img/teylers-museum.jpg" alt="Teyler's museum" title="Teyler's museum">
-        </article>
-      </section>
-
-      <!-- Secondary content -->
-      <section id="secondarycontent">
-        <header><h2>Haarlem Central</h2></header>
-        <article>
-          <h5>Title description, Sep 2, 2017</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <div class="fakeimg" style="height:200px;">Image</div>
-        </article>
-      </section>
-
-      <!-- Sport content -->
-      <section id="sportcontent">
-        <header><h2>Taekwondo</h2></header>
-        <article>
-          <h5>Sportclubs</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </article>
+        <p>If you want to have more information about schooling, visit the site of HWA-rang Dragon.</p>
+        <aside>
+          <a href="https://www.taekwon.nl/taekwondo/">More information</a>
+        </aside>
+        <footer>Referral</footer>
       </section>
 
       <!-- Contact content -->
@@ -129,7 +186,7 @@
           </fieldset>
         </form>
       </section>
-    </main>
+    </aside>
   </div>
 
   <!-- Footer -->
@@ -143,5 +200,20 @@
     <a href="#contactcontent">Contact</a>
     <h3>&copy; Manoah Tervoort</h3>
   </footer>
+
+  <!-- Cookie message -->
+  <input type="checkbox" id="close-btn"/>
+  <section id="cookie-msg">
+    <h3>Cookie message</h3>
+    <p>This website uses cookies to ensure you get the best experience. <a href="https://www.cookielawinfo.com/what-are-cookies/" target="_blank">Learn more</a></p>
+    <label for="close-btn">Got it!</label>
+  </section>
+
+  <!-- Background video -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="/643622/videos/background.webm" type="video/webm">
+    <source src="/643622/videos/background.mp4" type="video/mp4">
+    <source src="/643622/videos/background.ogv" type="video/ogg">
+  </video>
 </body>
 </html>

@@ -26,7 +26,11 @@ body {
   color: #FFFFFF;
   text-align: center;
   background: transparent;
-  padding: 5em;
+}
+
+#logo {
+  width: 2em;
+  vertical-align: middle;
 }
 
 #header h1 {
@@ -54,7 +58,7 @@ nav ul li {
   display: inline-block;
 }
 
-nav a {
+nav a, #menu-icon {
   color: #FFFFFF;
   display: inline-block;
   padding: .9em 1.2em;
@@ -63,8 +67,21 @@ nav a {
   font-size: 1em;
 }
 
-nav a:hover {
+nav a:hover, #menu-icon:hover {
   background-color: #000000;
+}
+
+#menu-checkbox, #menu-icon {
+  display: none;
+  background: #2699FB;
+  cursor: pointer;
+  float: right;
+  padding: .9em 1.2em;
+  margin-bottom: -4px;
+}
+
+#menu-icon img {
+  margin: 0;
 }
 
 /* Container */
@@ -76,14 +93,14 @@ nav a:hover {
 }
 
 /* Left column */
-aside {
-  flex-basis: 30%;
+main {
+  flex-basis: 63%;
   padding-top: 2em;
 }
 
 /* Right column */
-main {
-  flex-basis: 60%;
+aside {
+  flex-basis: 33%;
   padding-top: 2em;
 }
 
@@ -99,6 +116,11 @@ section > header > h2 {
   text-align: center;
 }
 
+#maincontent img {
+  width: 100%;
+  max-height: 50em;
+}
+
 /* Fake image, just for this example */
 .fakeimg {
   background-color: #707070;
@@ -111,38 +133,38 @@ section > header > h2 {
   padding: 0;
 }
 
-  .form-row {
-    display: flex;
-    justify-content: space-around;
-    padding: .5em;
-  }
+.form-row {
+  display: flex;
+  justify-content: space-around;
+  padding: .5em;
+}
 
-  .form-row > label {
-    padding: .5em 1em .5em 0;
-    flex: 1;
-  }
+.form-row > label {
+  padding: .5em 1em .5em 0;
+  flex: 1;
+}
 
-  .form-row > input, .form-row > textarea {
-    flex: 2;
-    padding: .5em;
-  }
+.form-row > input, .form-row > textarea {
+  flex: 2;
+  padding: .5em;
+}
 
-  .form-row > textarea {
-    height: 10em;
-  }
+.form-row > textarea {
+  height: 10em;
+}
 
-  .form-row > input[type=submit] {
-   background: #2699FB;
-   border-radius: 1em;
-   color: #FFFFFF;
-   padding: 1em;
-   border: 0;
-  }
+.form-row > input[type=submit] {
+ background: #2699FB;
+ border-radius: 1em;
+ color: #FFFFFF;
+ padding: 1em;
+ border: 0;
+}
 
-  .form-row > input[type=submit]:hover {
-    cursor: pointer;
-    filter: brightness(80%);
-  }
+.form-row > input[type=submit]:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
 
 /* Footer */
 footer {
@@ -160,10 +182,112 @@ footer a:hover {
   color: #2699FB;
 }
 
+/* Cookie message */
+#cookie-msg {
+  position: fixed;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: .25em 1em .25em 1em;
+  background: #444444;
+  color: white;
+  z-index: 100;
+}
+
+#cookie-msg h3 {
+  margin-top: .5%;
+  margin-bottom: -1%;
+}
+
+#cookie-msg p {
+  display: inline-block;
+}
+
+#cookie-msg label {
+  background: #2699FB;
+  border-radius: 1em;
+  padding: .5em 2em .5em 2em;
+  float: right;
+  text-align: center;
+  margin-top: .5em;
+  font-weight: bold;
+}
+
+#cookie-msg label:hover {
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+#cookie-msg a {
+  color: #2699FB;
+}
+
+#cookie-msg a:hover {
+  filter: brightness(80%);
+}
+
+#close-btn {
+  display: none;
+}
+
+#close-btn:checked ~ #cookie-msg {
+  display: none;
+}
+
+/* Responsive header */
+@media screen and (max-width: 830px) {
+  #header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #header h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #logo {
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  #header h1 {
+    font-size: 1.5em;
+  }
+  #header h2 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #header h1 {
+    font-size: 1em;
+  }
+  #header h2 {
+    font-size: .5em;
+  }
+}
+
 /* Responsive menu */
 @media screen and (max-width: 795px) {
   nav ul li, nav a {
     width: 100%;
+  }
+  .menu-item {
+    display: none;
+  }
+  #menu-icon {
+    display: block;
+  }
+  #menu-checkbox:checked ~ ul .menu-item {
+    display: block;
   }
 }
 
@@ -180,5 +304,34 @@ footer a:hover {
   }
   #container section {
     margin-bottom: 1em;
+  }
+}
+
+/* Responsive contact form */
+@media screen and (min-width: 1040px) and (max-width: 1420px) {
+  .form-row {
+    flex-direction: column;
+  }
+  .form-row > textarea {
+    resize: vertical;
+    flex: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .form-row {
+    flex-direction: column;
+  }
+  .form-row > textarea {
+    resize: vertical;
+    flex: none;
+  }
+}
+
+/* Responsive cookie message */
+@media screen and (max-width: 715px) {
+  #cookie-msg label {
+    width: 100%;
+    display: block;
+    margin-bottom: .5em;
   }
 }
