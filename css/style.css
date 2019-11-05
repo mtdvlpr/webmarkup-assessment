@@ -8,12 +8,33 @@ html {
 
 body {
   margin: 0;
-  font-family: Aileron, Arial, Roboto;
   background-color: transparent;
+  font-family: Aileron, Arial, Roboto, Verdana;
+
   user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  -webkit-flex-direction: row;
+
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+
+  justify-content: space-around;
+  -ms-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -webkit-justify-content: space-around;
 }
 
 /* Custom fonts */
@@ -38,12 +59,12 @@ header, section, footer, aside, nav, main, article, figure {
 
 /* Background video */
 #bgVideo {
+  z-index: -100;
+  min-width: 100%;
+  min-height: 100%;
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -100;
 }
 
 /* Header */
@@ -51,6 +72,11 @@ header, section, footer, aside, nav, main, article, figure {
   color: #FFFFFF;
   text-align: center;
   background: transparent;
+
+  flex-basis: 100%;
+  -ms-flex-basis: 100%;
+  -moz-flex-basis: 100%;
+  -webkit-flex-basis: 100%;
 }
 
 #logo {
@@ -65,19 +91,24 @@ header, section, footer, aside, nav, main, article, figure {
 
 #header h2 {
   margin-top: 0;
-  font-size:1.5em;
+  font-size: 1.5em;
 }
 
 /* Navigation Bar */
 nav {
   background-color: #2699FB;
+
+  flex-basis: 100%;
+  -ms-flex-basis: 100%;
+  -moz-flex-basis: 100%;
+  -webkit-flex-basis: 100%;
 }
 
 nav ul {
   list-style-type: none;
   text-align: center;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 nav ul li {
@@ -86,51 +117,28 @@ nav ul li {
 
 nav a, #menu-icon {
   color: #FFFFFF;
-  display: inline-block;
+  font-size: 1em;
+  text-align: center;
   padding: .9em 1.2em;
   text-decoration: none;
-  text-align: center;
-  font-size: 1em;
+  display: inline-block;
 }
 
 nav a:hover, #menu-icon:hover {
-  background-color: #707070;
+  background-color: #1e7ac9;
 }
 
 #menu-checkbox, #menu-icon {
-  display: none;
-  background: #2699FB;
-  cursor: pointer;
   float: right;
+  display: none;
+  cursor: pointer;
   padding: .9em 1.2em;
   margin-bottom: -4px;
+  background: #2699FB;
 }
 
 #menu-icon img {
   margin: 0;
-}
-
-/* Container */
-#container {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: flex;
-
-  flex-direction: row;
-  -ms-flex-direction: row;
-  -moz-flex-direction: row;
-  -webkit-flex-direction: row;
-
-  flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-
-  justify-content: space-around;
-  -ms-justify-content: space-around;
-  -moz-justify-content: space-around;
-  -webkit-justify-content: space-around;
 }
 
 /* Left column */
@@ -153,31 +161,33 @@ aside {
   padding-top: 2em;
 }
 
-#container section {
+main section, aside section {
   flex: 1;
   -ms-flex: 1;
   -moz-flex: 1;
   -webkit-flex: 1;
 
-  background-color: #F5F5F5;
   padding: 1em;
   margin-bottom: 2em;
   border-radius: 1em;
+  background-color: #F5F5F5;
 }
 
 section > header > h2 {
+  font-size: 1.5em;
   text-align: center;
 }
 
-#container img {
+section img {
+  min-width: 100%;
   max-width: 100%;
 }
 
 /* Fake image, just for this example */
 .fakeimg {
-  background-color: #707070;
   width: 100%;
   padding: 20px;
+  background-color: #707070;
 }
 
 /* Contact form */
@@ -200,12 +210,12 @@ section > header > h2 {
 }
 
 .form-row > label {
-  padding: .5em 1em .5em 0;
-
   flex: 1;
   -ms-flex: 1;
   -moz-flex: 1;
   -webkit-flex: 1;
+
+  padding: .5em 1em .5em 0;
 }
 
 .form-row > input, .form-row > textarea {
@@ -231,18 +241,20 @@ section > header > h2 {
 
 .form-row > input[type=submit]:hover {
   cursor: pointer;
-  filter: brightness(80%);
-  -ms-filter: brightness(80%);
-  -moz-filter: brightness(80%);
-  -webkit-filter: brightness(80%);
+  background: #1e7ac9;
 }
 
 /* Footer */
 footer {
-  color: #FFFFFF;
   padding: 1em;
+  color: #FFFFFF;
   text-align: center;
   background: #000000;
+
+  flex-basis: 100%;
+  -ms-flex-basis: 100%;
+  -moz-flex-basis: 100%;
+  -webkit-flex-basis: 100%;
 }
 
 footer a {
@@ -255,14 +267,15 @@ footer a:hover {
 
 /* Cookie message */
 #cookie-msg {
-  position: fixed;
-  bottom: 0;
-  display: block;
-  width: 100%;
   padding: .25em 1em .25em 1em;
   background: #444444;
+  display: block;
   color: white;
   z-index: 100;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 #cookie-msg h3 {
@@ -275,20 +288,17 @@ footer a:hover {
 }
 
 #cookie-msg label {
-  background: #2699FB;
-  border-radius: 1em;
-  padding: .5em 2em .5em 2em;
   float: right;
-  text-align: center;
   margin-top: .5em;
   font-weight: bold;
+  border-radius: 1em;
+  text-align: center;
+  background: #2699FB;
+  padding: .5em 2em .5em 2em;
 }
 
 #cookie-msg label:hover {
-  filter: brightness(80%);
-  -ms-filter: brightness(80%);
-  -moz-filter: brightness(80%);
-  -webkit-filter: brightness(80%);
+  background: #1e7ac9;
   cursor: pointer;
 }
 
@@ -297,10 +307,7 @@ footer a:hover {
 }
 
 #cookie-msg a:hover {
-  filter: brightness(80%);
-  -ms-filter: brightness(80%);
-  -moz-filter: brightness(80%);
-  -webkit-filter: brightness(80%);
+  color: #1e7ac9;
 }
 
 #close-btn {
@@ -329,8 +336,8 @@ footer a:hover {
   #logo {
     display: block;
     margin-left: 50%;
-    transform: translate(-50%, 0);
     margin-bottom: 5%;
+    transform: translate(-50%, 0);
   }
 }
 
@@ -370,7 +377,7 @@ footer a:hover {
 
 /* Responsive layout */
 @media screen and (max-width: 1040px) {
-  #container {
+  body {
     flex-direction: column;
     -ms-flex-direction: column;
     -moz-flex-direction: column;
@@ -382,13 +389,13 @@ footer a:hover {
   aside {
     padding-top: 0;
   }
-  #container section {
+  main section, aside section {
     margin-bottom: 1em;
   }
 }
 
 @media screen and (max-width: 1040px) and (-ms-high-contrast: none), (max-width: 1040px) and (-ms-high-contrast: active) {
-  #container {
+  body {
     display: block;
   }
 }
@@ -428,6 +435,9 @@ footer a:hover {
     -moz-flex: none;
     -webkit-flex: none;
   }
+  .form-row label, .form-row input {
+    -ms-flex: none;
+  }
 }
 
 /* Responsive cookie message */
@@ -437,17 +447,4 @@ footer a:hover {
     display: block;
     margin-bottom: .5em;
   }
-}
-
-/* IE10+ specific styling */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-     .form-row > input[type=submit]:hover {
-        background: #707070;
-     }
-     #cookie-msg label:hover {
-       background: #AAAAAA;
-     }
-     #cookie-msg a:hover {
-       color: #AAAAAA;
-     }
 }

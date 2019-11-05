@@ -25,16 +25,28 @@
 
 <!--
   All images used on this website are royalty free:
-    * haarlem.png: https://pixabay.com/nl/photos/haarlem-nederland-holland-landschap-4453242/
-    * church.png: https://pixabay.com/nl/photos/nederland-haarlem-kerk-architectuur-272474/
-
-    License: https://pixabay.com/nl/service/license/
+    Main content:
+      * haarlem.png: https://pixabay.com/nl/photos/haarlem-nederland-holland-landschap-4453242/
+      * church.png: https://pixabay.com/nl/photos/nederland-haarlem-kerk-architectuur-272474/
+    Secondary content:
+      *
+    Sport content:
+      * dragongym.png: https://www.pexels.com/photo/people-in-black-shirt-and-pants-690598/
+      * mudoin.png: https://www.pexels.com/photo/2-people-doing-karate-during-sunset-62376/
+      * tbn.png: https://pixabay.com/nl/illustrations/karate-sport-opleiding-silhouet-4002687/
+      * evenaar.png: https://pixabay.com/nl/photos/enlogar-tai-chi-taiji-qi-gong-3033957/
+      * eagle.png: https://pixabay.com/nl/illustrations/martial-arts-straat-gevecht-225397/
+      * enoch.png: https://pixabay.com/nl/photos/martial-arts-silhuetten-muay-thai-2544677/
+      * bear.png: https://pixabay.com/nl/photos/persoon-silhouet-springen-598202/
+      * chung.png: https://pixabay.com/nl/illustrations/kung-fu-martial-arts-kungfu-4304054/
+      * cheo.png: https://pixabay.com/nl/photos/taekwondo-kick-springen-korea-544831/
+      * gyeong.png: https://pixabay.com/nl/photos/martial-art-sport-populaire-cultuur-3326207/
 -->
 
 <body>
 
   <!-- Header -->
-  <header id="header">
+  <header id="header"> <!-- The logo is made with: https://favicon.io/favicon-generator/ -->
     <h1><img src="/643622/img/logo.png" alt="Logo" title="Logo" id="logo"> World Taekwondo Federation</h1>
     <h2>Taekwondo for you</h2>
   </header>
@@ -46,168 +58,158 @@
       <li><label for="menu-checkbox" id="menu-icon"><img src="/643622/img/menu.svg" alt="Open menu" title="Open menu"></label></li>
       <li class="menu-item"><a href="#header">Home</a></li>
       <li class="menu-item"><a href="#maincontent">Haarlem</a></li>
-      <li class="menu-item"><a href="#secondarycontent">Haarlem Central</a></li>
+      <li class="menu-item"><a href="#secondarycontent">Haarlem Center</a></li>
       <li class="menu-item"><a href="#sportcontent">Taekwondo</a></li>
-      <li class="menu-item"><a href="#about">About Us</a></li>
-      <li class="menu-item"><a href="#referalcontent">Referral</a></li>
+      <li class="menu-item"><a href="#referralcontent">Referral</a></li>
       <li class="menu-item"><a href="#contactcontent">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- The container -->
-  <div id="container">
+  <!-- Main column -->
+  <main>
 
-    <!-- Main column -->
-    <main>
+    <!-- Main content -->
+    <section id="maincontent">
+      <header><h2>Haarlem</h2></header>
+      <article>
+        <h3>The city</h3>
+        <img src="/643622/img/maincontent/haarlem.png" srcset="/643622/img/maincontent/haarlem-1920.png 1x, /643622/img/maincontent/haarlem-1280.png 2x, /643622/img/maincontent/haarlem-640.png 3x" alt="Haarlem" title="Haarlem">
+        <p>With an abundance of historical sights, cultural attractions and hidden gems crammed into a relatively small city, a visit to Haarlem makes for a brilliant day trip.</p>
+        <p>There’s plenty to keep the visitor entertained - including river cruises, flower markets and more.</p>
+        <p>And thanks to its compact size, it’s easy to get a good introduction to the city even if you only have one day to explore it.</p>
+      </article>
+      <article>
+        <h3>The Grote Kerk</h3>
+        <img src="/643622/img/maincontent/church.png" srcset="/643622/img/maincontent/church-1920.png 1x, /643622/img/maincontent/church-1280.png 2x, /643622/img/maincontent/church-640.png 3x" alt="The Grote Kerk, Haarlem" title="The Grote Kerk, Haarlem">
+        <p>Some text...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article>
+      <footer>Haarlem</footer>
+    </section>
 
-      <!-- Main content -->
-      <section id="maincontent">
-        <header><h1>Haarlem</h1></header>
-        <article>
-          <h2>The city</h2>
-          <img src="/643622/img/haarlem.png" alt="Haarlem" title="Haarlem">
-          <p>With an abundance of historical sights, cultural attractions and hidden gems crammed into a relatively small city, a visit to Haarlem makes for a brilliant day trip.</p>
-          <p>There’s plenty to keep the visitor entertained - including river cruises, flower markets and more.</p>
-          <p>And thanks to its compact size, it’s easy to get a good introduction to the city even if you only have one day to explore it.</p>
-        </article>
-        <article>
-          <h2>The Great Church</h2>
-          <img src="/643622/img/church.png" alt="The Great Church of Haarlem" title="The Great Church of Haarlem">
-        </article>
-          <footer>Haarlem</footer>
-      </section>
+    <!-- Secondary content -->
+    <section id="secondarycontent">
+      <header><h2>Haarlem Center</h2></header>
+      <article>
+        <h3>Some title</h3>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </article>
+      <article>
+        <h3>Some title</h3>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article>
+      <footer>Haarlem Center</footer>
+    </section>
 
-      <!-- Secondary content -->
-      <section id="secondarycontent">
-        <header><h2>Haarlem Central</h2></header>
-        <article>
-          <h5>Title description, Sep 2, 2017</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <footer>Haarlem Central</footer>
-        </article>
-      </section>
+    <!-- Sport content -->
+    <section id="sportcontent">
+      <header><h2>Taekwondo sport clubs</h2></header>
+      <article>
+        <h3>DragonGym</h3>
+        <a href="https://www.taekwon.nl/taekwondo/" target="_blank"><img src="/643622/img/clubs/dragongym.png" srcset="/643622/img/clubs/dragongym-1920.png 1x, /643622/img/clubs/dragongym-1280.png 2x, /643622/img/clubs/dragongym-640.png 3x" alt="DragonGym's website" title="Visit DragonGym's website"></a>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </article>
+      <article>
+        <h3>Mudoin Taekwondo Haarlem</h3>
+        <a href="http://taekwonmudo-hta.nl/" target="_blank"><img src="/643622/img/clubs/mudoin.png" srcset="/643622/img/clubs/mudoin-1920.png 1x, /643622/img/clubs/mudoin-1280.png 2x, /643622/img/clubs/mudoin-640.png 3x" alt="Mudoin's website" title="Visit Mudoin's website"></a>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </article>
+      <article>
+        <h3>Taekwondo Bond Nederland (TBN)</h3>
+        <a href="http://www.taekwondobond.nl/" target="_blank"><img src="/643622/img/clubs/tbn.png" srcset="/643622/img/clubs/tbn-1920.png 1x, /643622/img/clubs/tbn-1280.png 2x, /643622/img/clubs/tbn-640.png 3x" alt="TBN's website" title="Visit TBN's website"></a>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </article>
+      <article>
+        <h3>De Evenaar (DragonGym)</h3>
+        <a href="https://www.taekwon.nl/taekwondo/" target="_blank"><img src="/643622/img/clubs/evenaar.png" srcset="/643622/img/clubs/evenaar-1920.png 1x, /643622/img/clubs/evenaar-1280.png 2x, /643622/img/clubs/evenaar-640.png 3x" alt="De Evenaar's website" title="Visit De Evenaar's website"></a>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </article>
+      <article>
+        <h3>Eagle Gym Haarlem</h3>
+        <a href="https://eagle-gym.nl/taekwondo/" target="_blank"><img src="/643622/img/clubs/eagle.png" srcset="/643622/img/clubs/eagle-1920.png 1x, /643622/img/clubs/eagle-1280.png 2x, /643622/img/clubs/eagle-640.png 3x" alt="Eagle Gym's website" title="Visit Eagle Gym's website"></a>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </article>
+      <article>
+        <h3>Enoch Martial Arts</h3>
+        <a href="http://www.enochmartialarts.nl/" target="_blank"><img src="/643622/img/clubs/enoch.png" srcset="/643622/img/clubs/enoch-1920.png 1x, /643622/img/clubs/enoch-1280.png 2x, /643622/img/clubs/enoch-640.png 3x" alt="Enoch Martial Arts' website" title="Visit Enoch Martial Arts' website"></a>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </article>
+      <article>
+        <h3>Black Bear Taekwondo</h3>
+        <a href="https://amsterdamtaekwondo.nl/" target="_blank"><img src="/643622/img/clubs/bear.png" srcset="/643622/img/clubs/bear-1920.png 1x, /643622/img/clubs/bear-1280.png 2x, /643622/img/clubs/bear-640.png 3x" alt="Black Bear's website" title="Visit Black Bear's website"></a>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </article>
+      <article>
+        <h3>Chung do Kwan</h3>
+        <a href="https://chungdokwan.nl/" target="_blank"><img src="/643622/img/clubs/chung.png" srcset="/643622/img/clubs/chung-1920.png 1x, /643622/img/clubs/chung-1280.png 2x, /643622/img/clubs/chung-640.png 3x" alt="Chung do Kwan's website" title="Visit Chung do kwan's website"></a>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </article>
+      <article>
+        <h3>Cheo Go Kwan Taekwon-do</h3>
+        <a href="https://www.cheogokwan.nl/" target="_blank"><img src="/643622/img/clubs/cheo.png" srcset="/643622/img/clubs/cheo-1920.png 1x, /643622/img/clubs/cheo-1280.png 2x, /643622/img/clubs/cheo-640.png 3x" alt="Cheo Go Kwan's website" title="Visit Cheo Go Kwan's website"></a>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </article>
+      <article>
+        <h3>Gyeong-Rye Den Haag Taekwondo</h3>
+        <a href="https://www.gyeong-rye.nl/index.php/nl/" target="_blank"><img src="/643622/img/clubs/gyeong.png" srcset="/643622/img/clubs/gyeong-1920.png 1x, /643622/img/clubs/gyeong-1280.png 2x, /643622/img/clubs/gyeong-640.png 3x" alt="Gyeong-Rye's website" title="Visit Gyeong-Rye's website"></a>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </article>
+      <footer>Taekwondo</footer>
+    </section>
+  </main>
 
-      <!-- Sport content -->
-      <section id="sportcontent">
-        <header><h2>Taekwondo</h2></header>
-        <article>
-          <h5>Sportclub 1</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  <!-- Aside -->
+  <aside>
 
-          <h5>Sportclub 2</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <!-- Referral -->
+    <section id="referralcontent">
+      <header><h2>Referral</h2></header>
+      <p>If you want to have more information about schooling, visit the site of HWA-rang Dragon.</p>
+      <aside>
+        <a href="https://www.taekwon.nl/taekwondo/">More information</a>
+      </aside>
+      <footer>Referral</footer>
+    </section>
 
-          <h5>Sportclub 3</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-          <h5>Sportclub 4</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-          <h5>Sportclub 5</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-          <h5>Sportclub 6</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-          <h5>Sportclub 7</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-          <h5>Sportclub 8</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-          <h5>Sportclub 9</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-          <h5>Sportclub 10</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-          <footer>Taekwondo</footer>
-        </article>
-      </section>
-    </main>
-
-    <!-- Aside -->
-    <aside>
-
-      <!-- About -->
-      <section id="about">
-        <header><h2>About Us</h2></header>
-        <article>
-          <h5>Photo of me:</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-        </article>
-      </section>
-
-      <!-- Referral -->
-      <section id="referalcontent">
-        <header><h2>Referral</h2></header>
-        <p>If you want to have more information about schooling, visit the site of HWA-rang Dragon.</p>
-        <aside>
-          <a href="https://www.taekwon.nl/taekwondo/">More information</a>
-        </aside>
-        <footer>Referral</footer>
-      </section>
-
-      <!-- Contact content -->
-      <section id="contactcontent">
-        <header><h2>Contact</h2></header>
-        <form action="http://witan.nl/inholland/testform.php" method="post">
-          <fieldset>
-            <legend>Contact form</legend>
-            <ul class="wrapper">
-              <li class="form-row">
-                <label for="name">Name: *</label>
-                <input type="text" id="name" name="name" required>
-              </li>
-              <li class="form-row">
-                <label for="email">Email address: *</label>
-                <input type="email" id="email" name="email" required>
-              </li>
-              <li class="form-row">
-                <label for="message">Message: *</label>
-                <textarea id="message" name="message" required></textarea>
-              </li>
-              <li class="form-row">
-                <input type="submit" value="Submit"/>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
-      </section>
-    </aside>
-  </div>
+    <!-- Contact content -->
+    <section id="contactcontent">
+      <header><h2>Contact</h2></header>
+      <form action="http://witan.nl/inholland/testform.php" method="post">
+        <fieldset>
+          <legend>Contact form</legend>
+          <ul class="wrapper">
+            <li class="form-row">
+              <label for="name">Name: *</label>
+              <input type="text" id="name" name="name" required>
+            </li>
+            <li class="form-row">
+              <label for="email">Email address: *</label>
+              <input type="email" id="email" name="email" required>
+            </li>
+            <li class="form-row">
+              <label for="message">Message: *</label>
+              <textarea id="message" name="message" required></textarea>
+            </li>
+            <li class="form-row">
+              <input type="submit" value="Submit"/>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </section>
+  </aside>
 
   <!-- Footer -->
   <footer>
     <a href="#header">Home</a> |
     <a href="#maincontent">Haarlem</a> |
-    <a href="#secondarycontent">Haarlem Central</a> |
+    <a href="#secondarycontent">Haarlem Center</a> |
     <a href="#sportcontent">Taekwondo</a> |
-    <a href="#about">About Us</a> |
-    <a href="#referalcontent">Referral</a> |
+    <a href="#referralcontent">Referral</a> |
     <a href="#contactcontent">Contact</a>
     <h3>&copy; Manoah Tervoort</h3>
   </footer>
@@ -220,7 +222,7 @@
     <label for="close-btn">Got it!</label>
   </section>
 
-  <!-- Background video -->
+  <!-- Background video (source: https://www.pexels.com/video/a-sky-full-of-stars-at-night-2646392/) -->
   <video autoplay muted loop id="bgVideo">
     <source src="/643622/videos/background.webm" type="video/webm">
     <source src="/643622/videos/background.mp4" type="video/mp4">
