@@ -40,11 +40,8 @@ body {
 /* Custom fonts */
 @font-face {
   font-family: "Aileron";
-  src: url("/643622/fonts/aileron/Aileron-SemiBold.eot");
-}
-@font-face {
-  font-family: "Aileron";
   src: url("/643622/fonts/aileron/Aileron-SemiBold.otf");
+  src: url("/643622/fonts/aileron/Aileron-SemiBold.eot");
 }
 
 @font-face {
@@ -152,7 +149,7 @@ main {
 }
 
 /* Right column */
-aside {
+#sidebar {
   flex-basis: 33%;
   -ms-flex-basis: 33%;
   -moz-flex-basis: 33%;
@@ -161,7 +158,7 @@ aside {
   padding-top: 2em;
 }
 
-main section, aside section {
+main > section, #sidebar > section {
   flex: 1;
   -ms-flex: 1;
   -moz-flex: 1;
@@ -178,7 +175,30 @@ section > header > h2 {
   text-align: center;
 }
 
-section img {
+section a {
+  color: #2699FB;
+}
+
+section a:hover {
+  color: #004f94;
+  text-decoration: none;
+}
+
+section footer {
+  color: #000000;
+  text-align: left;
+  background: transparent;
+  border-top: .1em solid #000000;
+}
+
+article p {
+  user-select: text;
+  -ms-user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+}
+
+article img {
   min-width: 100%;
   max-width: 100%;
 }
@@ -263,6 +283,7 @@ footer a {
 
 footer a:hover {
   color: #AAAAAA;
+  text-decoration: none;
 }
 
 /* Cookie message */
@@ -300,14 +321,6 @@ footer a:hover {
 #cookie-msg label:hover {
   background: #1e7ac9;
   cursor: pointer;
-}
-
-#cookie-msg a {
-  color: #2699FB;
-}
-
-#cookie-msg a:hover {
-  color: #1e7ac9;
 }
 
 #close-btn {
@@ -383,13 +396,13 @@ footer a:hover {
     -moz-flex-direction: column;
     -webkit-flex-direction: column;
   }
-  main, aside {
+  main, #sidebar {
     padding: 1em 2% 0 2%;
   }
-  aside {
+  #sidebar {
     padding-top: 0;
   }
-  main section, aside section {
+  main > section, #sidebar > section {
     margin-bottom: 1em;
   }
 }
