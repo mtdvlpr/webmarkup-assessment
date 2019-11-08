@@ -5,8 +5,10 @@
 
     <!-- Meta data -->
     <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
     <meta name="author" content="Manoah Tervoort">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="7T5PveFCD8EOMSUSs30ZgdkfPQ5dVL-350qNE1jYGG0">
     <meta name="description" content="This a is website for people to learn about Taekwondo and the city of Haarlem">
     <meta name="keywords" content="Taekwondo, Sport, Haarlem, Netherlands, Fighting, Sports, The Netherlands, Learning Taekwondo, Fighting Sport">
 
@@ -23,7 +25,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Base URL -->
-    <base href="http://taekwon.eu/643622/">
+    <base href="/643622/">
   </head>
 
   <!-- Messages:
@@ -31,7 +33,9 @@
       * HTML: http://bit.ly/html-validation
       * CSS: http://bit.ly/css3-validation
 
-    All images used on this website are royalty free:
+    All images/videos used on this website are royalty free:
+      Background video: https://www.pexels.com/video/a-sky-full-of-stars-at-night-2646392/
+
       Main content:
         * haarlem.png: https://pixabay.com/nl/photos/haarlem-nederland-holland-landschap-4453242/
         * church.png: https://pixabay.com/nl/photos/nederland-haarlem-kerk-architectuur-272474/
@@ -65,7 +69,10 @@
     <nav>
       <input type="checkbox" id="menu-checkbox">
       <ul>
-        <li><label for="menu-checkbox" id="menu-icon"><img src="img/menu.svg" alt="Open menu" title="Open menu"></label></li>
+        <li><label for="menu-checkbox" id="menu-icon">
+            <img src="img/menu.svg" alt="Open menu" title="Open menu" id="open-menu">
+            <img src="img/close.png" alt="Close menu" title="Close menu" id="close-menu">
+        </label></li>
         <li class="menu-item"><a href="#header">Home</a></li>
         <li class="menu-item"><a href="#maincontent">Haarlem</a></li>
         <li class="menu-item"><a href="#secondarycontent">Haarlem Center</a></li>
@@ -75,10 +82,10 @@
       </ul>
     </nav>
 
-    <!-- Main column -->
+    <!-- Main Column -->
     <main>
 
-      <!-- Main content -->
+      <!-- Main Content -->
       <section id="maincontent">
         <header><h2>Haarlem</h2></header>
         <article>
@@ -109,7 +116,7 @@
         <footer>Last updated: <time datetime="2019-11-06">November 6th</time></footer>
       </section>
 
-      <!-- Secondary content (350 words) -->
+      <!-- Secondary Content -->
       <section id="secondarycontent">
         <header><h2>Haarlem Center</h2></header>
         <article>
@@ -155,7 +162,7 @@
         <footer>Last updated: <time datetime="2019-11-07">November 7th</time></footer>
       </section>
 
-      <!-- Sport content -->
+      <!-- Sport Content -->
       <section id="sportcontent">
         <header><h2>Taekwondo</h2></header>
         <article>
@@ -259,7 +266,7 @@
         <footer>Last updated: <time datetime="2019-11-07">November 7th</time></footer>
       </section>
 
-      <!-- Contact content -->
+      <!-- Contact Content -->
       <section id="contactcontent">
         <header>
           <h2>Contact</h2>
@@ -303,7 +310,7 @@
       <h2><small>Copyright &copy; 2019 Manoah Tervoort</small></h2>
     </footer>
 
-    <!-- Cookie message -->
+    <!-- Cookie Message -->
     <input type="checkbox" id="close-btn">
     <section id="cookie-msg">
       <h3>Cookie message</h3>
@@ -311,7 +318,7 @@
       <label for="close-btn">Got it!</label>
     </section>
 
-    <!-- Background video (source: https://www.pexels.com/video/a-sky-full-of-stars-at-night-2646392/) -->
+    <!-- Background Video -->
     <video autoplay muted loop id="bgVideo">
       <source src="videos/background.webm" type="video/webm">
       <source src="videos/background.mp4" type="video/mp4">
