@@ -28,25 +28,30 @@ body {
   -webkit-user-select: none;
 }
 
-/* Custom fonts */
+/* Custom Fonts */
 @font-face {
   font-family: "Aileron";
-  src: url("/643622/fonts/aileron/Aileron-SemiBold.eot?") format('embedded-opentype'),
-       url("/643622/fonts/aileron/Aileron-SemiBold.otf") format('opentype');
+  src: url('/643622/fonts/aileron/Aileron-SemiBold.eot');
+  src: url('/643622/fonts/aileron/Aileron-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('/643622/fonts/aileron/Aileron-SemiBold.woff2') format('woff2'),
+       url('/643622/fonts/aileron/Aileron-SemiBold.woff') format('woff'),
+       url('/643622/fonts/aileron/Aileron-SemiBold.ttf') format('truetype'),
+       url('/643622/fonts/aileron/Aileron-SemiBold.otf') format('opentype'),
+       url('/643622/fonts/aileron/Aileron-SemiBold.svg#font') format('svg');
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/643622/fonts/roboto/Roboto-Regular.eot?") format('embedded-opentype'),
-       url("/643622/fonts/roboto/Roboto-Regular.ttf") format('truetype');
+  src: url('/643622/fonts/roboto/Roboto-Regular.eot');
+  src: url('/643622/fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+       url('/643622/fonts/roboto/Roboto-Regular.woff2') format('woff2'),
+       url('/643622/fonts/roboto/Roboto-Regular.woff') format('woff'),
+       url('/643622/fonts/roboto/Roboto-Regular.ttf') format('truetype'),
+       url('/643622/fonts/roboto/Roboto-Regular.otf') format('opentype'),
+       url('/643622/fonts/roboto/Roboto-Regular.svg#font') format('svg');
 }
 
-/* Browser Support */
-header, section, footer, aside, nav, main, article, figure {
-  display: block;
-}
-
-/* Background video */
+/* Background Video */
 #bgVideo {
   bottom: 0;
   min-height: 100%;
@@ -126,14 +131,14 @@ nav a:hover, #menu-icon:hover {
   margin: 0;
 }
 
-/* Left column */
+/* Left Column */
 main {
   flex-basis: 63%;
   -webkit-flex-basis: 63%;
   padding-top: 2em;
 }
 
-/* Right column */
+/* Right Column */
 #sidebar {
   flex-basis: 33%;
   -webkit-flex-basis: 33%;
@@ -144,6 +149,7 @@ main {
   display: none;
 }
 
+/* Sections */
 main > section, #sidebar > section {
   background: #F5F5F5;
   border-radius: 1em;
@@ -158,6 +164,10 @@ main > section, #sidebar > section {
 section > header > h2 {
   font-size: 1.5em;
   text-align: center;
+}
+
+#contactcontent > header > h3 {
+  font-size: 1em;
 }
 
 section a {
@@ -196,6 +206,8 @@ section footer {
   color: #000000;
   text-align: left;
 }
+
+/*Articles */
 /*
 article h4, article p {
   user-select: auto;
@@ -209,7 +221,7 @@ article img {
   min-width: 100%;
 }
 
-/* Contact form */
+/* Contact Form */
 .wrapper {
   padding: 0;
 }
@@ -231,7 +243,7 @@ article img {
   padding: .5em 1em .5em 0;
 }
 
-.form-row > input, .form-row > textarea {
+.form-row > input, .form-row > textarea, .form-row button {
   flex: 2;
   -ms-flex: 2;
   -moz-flex: 2;
@@ -240,12 +252,12 @@ article img {
 }
 
 .form-row > textarea {
-  min-height: 10em;
   max-height: 20em;
+  min-height: 10em;
   resize: vertical;
 }
 
-.form-row > input[type=submit] {
+.form-row > button {
  background: #2699FB;
  border: 0;
  border-radius: 1em;
@@ -254,12 +266,12 @@ article img {
  transition: all .1s linear, background-color .3s ease-in-out;
 }
 
-.form-row > input[type=submit]:hover {
+.form-row > button:hover {
   background: #1e7ac9;
   cursor: pointer;
 }
 
-.form-row > input[type=submit]:active {
+.form-row > button:active {
   transform: translateY(5px);
 }
 
@@ -283,7 +295,7 @@ footer a:hover {
   text-decoration: none;
 }
 
-/* Cookie message */
+/* Cookie Message */
 #cookie-msg {
   animation: fadeInAnimation 1s ease 3s;
   animation-fill-mode: both;
@@ -330,7 +342,7 @@ footer a:hover {
   display: none;
 }
 
-/* Responsive header */
+/* Responsive Header */
 @media screen and (max-width: 830px) {
   #header h1 {
     font-size: 2.5em;
@@ -367,12 +379,13 @@ footer a:hover {
     font-size: 1em;
   }
   #header h2 {
-    font-size: .5em;
+    font-size: .75em;
+    margin-bottom: 10%;
   }
 }
 
-/* Responsive menu */
-@media screen and (max-width: 805px) {
+/* Responsive Menu */
+@media screen and (max-width: 700px) {
   nav ul li, nav a {
     width: 100%;
   }
@@ -390,8 +403,8 @@ footer a:hover {
   }
 }
 
-/* Responsive layout */
-@media screen and (max-width: 1040px) {
+/* Responsive Layout */
+@media screen and (max-width: 1000px) {
   body {
     flex-direction: column;
     -ms-flex-direction: column;
@@ -408,6 +421,14 @@ footer a:hover {
   }
 }
 
+/* Make Responsive Layout IE compatible */
+@media screen and (max-width: 1000px) and (-ms-high-contrast: none), (max-width: 1000px) and (-ms-high-contrast: active) {
+  body {
+    display: block;
+  }
+}
+
+/* Make abbreviation explanations actual text on mobile and tablet screens */
 @media screen and (max-width: 1179px) {
   abbr {
     text-decoration: none;
@@ -417,15 +438,8 @@ footer a:hover {
   }
 }
 
-/* Making responsive layout IE compatible */
-@media screen and (max-width: 1040px) and (-ms-high-contrast: none), (max-width: 1040px) and (-ms-high-contrast: active) {
-  body {
-    display: block;
-  }
-}
-
-/* Responsive contact form */
-@media screen and (min-width: 1040px) and (max-width: 1440px) {
+/* Responsive Contact Form */
+@media screen and (min-width: 1000px) and (max-width: 1423px) {
   .form-row {
     flex-direction: column;
     -ms-flex-direction: column;
@@ -437,11 +451,11 @@ footer a:hover {
     -moz-flex: none;
     -webkit-flex: none;
   }
-  .form-row label, .form-row input {
+  .form-row label, .form-row input, .form-row button {
     -ms-flex: none;
   }
 }
-@media screen and (max-width: 506px) {
+@media screen and (max-width: 510px) {
   .form-row {
     flex-direction: column;
     -ms-flex-direction: column;
@@ -453,12 +467,12 @@ footer a:hover {
     -moz-flex: none;
     -webkit-flex: none;
   }
-  .form-row label, .form-row input {
+  .form-row label, .form-row input, .form-row button {
     -ms-flex: none;
   }
 }
 
-/* Responsive cookie message */
+/* Responsive Cookie Message */
 @media screen and (max-width: 720px) {
   #cookie-msg label {
     display: block;
@@ -467,7 +481,7 @@ footer a:hover {
   }
 }
 
-/* Cookie message animation */
+/* Cookie Message animation */
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;

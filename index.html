@@ -12,11 +12,16 @@
     <meta name="description" content="This a is website for people to learn about Taekwondo and the city of Haarlem">
     <meta name="keywords" content="Taekwondo, Sport, Haarlem, Netherlands, Fighting, Sports, The Netherlands, Learning Taekwondo, Fighting Sport">
 
-    <!-- Icons (made with: https://favicon.io/favicon-generator/) -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
-    <link rel="manifest" href="img/icons/site.webmanifest">
+    <!-- Icons (made with: https://favicon.io/favicon-generator/ & https://realfavicongenerator.net/) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/643622/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/643622/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/643622/img/icons/favicon-16x16.png">
+    <link rel="manifest" href="/643622/img/icons/site.webmanifest">
+    <link rel="mask-icon" href="/643622/img/icons/safari-pinned-tab.svg" color="#2699fb">
+    <link rel="shortcut icon" href="/643622/img/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2699fb">
+    <meta name="msapplication-config" content="/643622/img/icons/browserconfig.xml">
+    <meta name="theme-color" content="#2699fb">
 
     <!-- Sitemap (the sitemap will be refreshed monthly) -->
     <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
@@ -61,17 +66,17 @@
 
     <!-- Header -->
     <header id="header"> <!-- The logo is made with: https://favicon.io/favicon-generator/ -->
-      <h1><img src="img/logo.png" alt="Logo" title="Logo" id="logo"> World Taekwondo Federation</h1>
+      <h1><img id="logo" src="img/logo.png" alt="Logo" title="Logo"> World Taekwondo Federation</h1>
       <h2><i>Taekwondo For You</i></h2>
     </header>
 
     <!-- Navigation Bar -->
     <nav>
-      <input type="checkbox" id="menu-checkbox">
+      <input id="menu-checkbox" type="checkbox">
       <ul>
-        <li><label for="menu-checkbox" id="menu-icon">
-            <img src="img/menu.svg" alt="Open menu" title="Open menu" id="open-menu">
-            <img src="img/close.png" alt="Close menu" title="Close menu" id="close-menu">
+        <li><label id="menu-icon" for="menu-checkbox">
+            <img id="open-menu" src="img/menu.svg" alt="Open menu" title="Open menu">
+            <img id="close-menu" src="img/close.png" alt="Close menu" title="Close menu">
         </label></li>
         <li class="menu-item"><a href="#header">Home</a></li>
         <li class="menu-item"><a href="#maincontent">Haarlem</a></li>
@@ -92,7 +97,7 @@
           <h3>The city</h3>
           <img src="img/maincontent/haarlem.png" srcset="img/maincontent/haarlem-1920.png 1x, img/maincontent/haarlem-1280.png 2x, img/maincontent/haarlem-640.png 3x" alt="Haarlem" title="Haarlem">
           <p>
-            From the 11th to 13th centuries, Haarlem was the seat of the Counts of Holland, and received its municipal charter in 1245, making it the second oldest city in the Dutch heartland.
+            From the 11th to the 13th century, Haarlem was the seat of the Counts of Holland, and received its municipal charter in 1245, making it the second oldest city in the Dutch heartland.
             In the 17th century, the city was the scene of great artistic activity and the residence of many painters, including Frans Hals, Jacob van Ruisdael, Philips Wouwerman, and Adriaen van Ostade.
           </p>
           <p>
@@ -105,7 +110,7 @@
           <h3>The Grote Kerk</h3>
           <img src="img/maincontent/church.png" srcset="img/maincontent/church-1920.png 1x, img/maincontent/church-1280.png 2x, img/maincontent/church-640.png 3x" alt="The Grote Kerk, Haarlem" title="The Grote Kerk, Haarlem">
           <p>
-            In the heart of the Grote Markt, Haarlem's main city square, Grote Kerk (St.-Bavokerk) is the city's most striking building.
+            In the heart of the Grote Markt, Haarlem's main city square, Grote Kerk (St. Bavokerk) is the city's most striking building.
             This Late Gothic cruciform basilica, now reaching 140 meters in length with its slender 40-meter tower, was started in the 14th century with the building of the choir, while the transepts were added in the mid-15th century.
           </p>
           <p>
@@ -139,7 +144,7 @@
         </article>
         <article>
           <h3>Touristic attractions</h3>
-          <img src="img/secondarycontent/tourists.png" srcset="img/secondarycontent/tourists-1920.png 1x, img/secondarycontent/tourists-1280.png 2x, img/secondarycontent/tourists-640.png 3x" alt="Haarlem Center" title="Haarlem Center">
+          <img src="img/secondarycontent/tourists.png" srcset="img/secondarycontent/tourists-1920.png 1x, img/secondarycontent/tourists-1280.png 2x, img/secondarycontent/tourists-640.png 3x" alt="Tourists" title="Tourists">
           <p>
             In the 17th century, the city was the scene of great artistic activity and the residence of many painters, including Frans Hals, Jacob van Ruisdael, Philips Wouwerman, and Adriaen van Ostade.
             This rich cultural heritage lives on to this day, and the Frans Hals Museum is one of the city's top tourist attractions.
@@ -270,7 +275,7 @@
       <section id="contactcontent">
         <header>
           <h2>Contact</h2>
-          <h4>Have a question? Fill out our form or <a href="https://www.taekwon.nl/contact-us/" target="_blank">contact the referral</a>!</h4>
+          <h3>Have a question? Fill out our form or <a href="https://www.taekwon.nl/contact-us/" target="_blank">contact the referral</a>!</h3>
         </header>
         <form action="http://witan.nl/inholland/testform.php" method="post">
           <fieldset>
@@ -278,18 +283,18 @@
             <ul class="wrapper">
               <li class="form-row">
                 <label for="name">Name: *</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" pattern="[^0-9]+" required>
+                <input id="name" type="text" name="name" placeholder="John Doe" pattern="[^0-9]+" required>
               </li>
               <li class="form-row">
                 <label for="email">Email address: *</label>
-                <input type="email" id="email" name="email" placeholder="john.joe@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <input id="email" type="email" name="email" placeholder="john.joe@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
               </li>
               <li class="form-row">
                 <label for="message">Message: *</label>
                 <textarea id="message" name="message" placeholder="Your question/query..." required></textarea>
               </li>
               <li class="form-row">
-                <input type="submit" value="Submit">
+                <button type="submit">Submit</button>
               </li>
             </ul>
           </fieldset>
@@ -311,7 +316,7 @@
     </footer>
 
     <!-- Cookie Message -->
-    <input type="checkbox" id="close-btn">
+    <input id="close-btn" type="checkbox">
     <section id="cookie-msg">
       <h3>Cookie message</h3>
       <p>This website uses cookies to ensure you get the best experience. <a href="https://www.cookielawinfo.com/what-are-cookies/" target="_blank">Learn more</a></p>

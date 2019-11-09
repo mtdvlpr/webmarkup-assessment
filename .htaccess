@@ -1,4 +1,22 @@
 RewriteEngine On
 
+# index.html
+RewriteRule ^/home?$ /643622/index.html
+
 # style.css
 RewriteRule ^/css?$ /643622/css/style.css
+
+#sitemap.html
+RewriteRule ^/sitemap?$ /643622/sitemap.html
+
+#robots.txt
+RewriteRule ^/robots?$ /643622/robots.txt
+
+#student.txt
+RewriteRule ^/student?$ /643622/student.txt
+
+#humans.txt
+RewriteRule ^/humans?$ /643622/humans.txt
+
+#logo.png
+RewriteRule ^/logo?$ /643622/img/logo.png
