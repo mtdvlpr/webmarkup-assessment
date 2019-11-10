@@ -208,14 +208,13 @@ section footer {
 }
 
 /*Articles */
-/*
-article h4, article p {
+article p {
   user-select: auto;
   -ms-user-select: auto;
   -moz-user-select: auto;
   -webkit-user-select: auto;
 }
-*/
+
 article img {
   max-width: 100%;
   min-width: 100%;
@@ -421,7 +420,7 @@ footer a:hover {
   }
 }
 
-/* Make Responsive Layout IE compatible */
+/* Responsive Layout IE compatible */
 @media screen and (max-width: 1000px) and (-ms-high-contrast: none), (max-width: 1000px) and (-ms-high-contrast: active) {
   body {
     display: block;
